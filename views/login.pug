@@ -1,0 +1,23 @@
+extends layout
+block content
+	.regdiv
+		h2 Регистрация		
+		form(method='post', action='/register')
+			input(type='text', name='regusername', placeholder='Логин')
+			br
+			input(type='password', name='regpassword', placeholder='Пароль')
+			br
+			input(type='submit')
+	.logdiv
+		h2 Вход
+		form(method='post', action='/login')
+			input(type='text', name='username', placeholder='Логин')
+			br
+			input(type='password', name='password', placeholder='Пароль')
+			br
+			input(type='submit')
+
+
+
+	script(src='http://code.jquery.com/jquery.js')
+	script(src='../node_modules/bootstrap/dist/js/bootstrap.min.js')
